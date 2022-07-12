@@ -73,3 +73,29 @@ _printf("%s, %s %d, %d\\n", weekday, month, day, year);
 No known bugs, If one is found sent your report to https://github.com/Idahota and https://github.com/Adeyinkablack
 .SH AUTHOR
 Akpasubi Idahota, Adeyinka Adeniji
+.SH SEE ALSO
+printf(1), asprintf(3), dprintf(3), scanf(3)
+.br
+.SH BUGS
+No known bugs so far.
+.SS COLOPHON
+.br
+This page was borrowed from the actual printf manual page.
+.SH EXAMPLE
+.br
+Print a string literal:
+.br
+int a = 0;
+.br
+char *a_string = "cat";
+.br
+a = _printf("test %s\n", a_string);
+.br
+printf("%d\n", a);
+.br
+return (0);
+.br
+.SS General Formatting:
+.br
+_printf("example format string [ % [ (c) (s) (d) (i) ]]", [variable] [string literal)
+.br
